@@ -1,0 +1,246 @@
+@import "normalize.css";
+
+:root {
+	@font-face {
+		font-family: "Ethan tran";
+		src: url("./Assets/fonts/NeueMontreal-Light.otf") format("opentype");
+		font-weight: 300;
+		font-style: normal;
+		font-display: auto;
+	}
+
+	@font-face {
+		font-family: "Ethan tran";
+		src: url("./Assets/fonts/NeueMontreal-LightItalic.otf") format("opentype");
+		font-weight: 300;
+		font-style: italic;
+		font-display: auto;
+	}
+
+	@font-face {
+		font-family: "Ethan tran";
+		src: url("./Assets/fonts/NeueMontreal-Regular.otf") format("opentype");
+		font-weight: 450;
+		font-style: normal;
+		font-display: auto;
+	}
+
+	@font-face {
+		font-family: "Ethan tran";
+		src: url("./Assets/fonts/NeueMontreal-Italic.otf") format("opentype");
+		font-weight: 450;
+		font-style: italic;
+		font-display: auto;
+	}
+
+	@font-face {
+		font-family: "Ethan tran";
+		src: url("./Assets/fonts/NeueMontreal-Bold.otf") format("opentype");
+		font-weight: 800;
+		font-style: normal;
+		font-display: auto;
+	}
+
+	@font-face {
+		font-family: "Ethan tran";
+		src: url("./Assets/fonts/NeueMontreal-BoldItalic.otf") format("opentype");
+		font-weight: 800;
+		font-style: italic;
+		font-display: auto;
+	}
+	@font-face {
+		font-family: "Ethan tran";
+		src: url("./Assets/fonts/NeueMontreal-Medium.otf") format("opentype");
+		font-weight: 800;
+		font-style: italic;
+		font-display: auto;
+	}
+	@font-face {
+		font-family: "Ethan tran";
+		src: url("./Assets/fonts/NeueMontreal-MediumItalic.otf") format("opentype");
+		font-weight: 800;
+		font-style: italic;
+		font-display: auto;
+	}
+
+	// Default Layout
+	--default-layout-header-height: 60px;
+	--default-layout-width: 1150px;
+	--font-family-sofia-pro-light-italic: "Sofia Pro Light Italic";
+	--font-family-sofia-pro-light: "Sofia Pro Light";
+	--font-family-sofia-pro-italic: "Sofia Pro Light Italic";
+	--font-family-sofia-pro: "Sofia Pro Regular";
+	--font-family-inter: "Inter";
+	--font-family-roboto: "Roboto";
+	--tiktok-color-primary: #fe2c55;
+
+	--color-dark: #1c1d20;
+	--color-dark-dark: #141517;
+	--color-light: #ffffff;
+	--color-blue: #455ce9;
+	--color-blue-dark: #334bd3;
+	--color-gray: #999d9e;
+	--color-lightgray: #e9eaeb;
+	--color-white: #ffffff;
+	--color-border: rgba(28, 29, 32, 0.175);
+	--color-border-solid: #d2d2d2;
+	--color-border-light: rgba(255, 255, 255, 0.2);
+	--color-border-solid-light: #545557;
+	--color-text: #1c1d20;
+	--color-text-light: #fff;
+	--alert-error: #ff4444;
+	--alert-success: #24c958;
+	--animation-primary: all 0.5s cubic-bezier(0.7, 0, 0.3, 1);
+	--animation-fast: all 0.3s cubic-bezier(0.7, 0, 0.3, 1);
+	--animation-smooth: all 0.7s cubic-bezier(0.7, 0, 0.3, 1);
+	--animation-slow: all 0.9s cubic-bezier(0.7, 0, 0.3, 1);
+	--section-padding: clamp(5em, 21vh, 12em);
+	--container-padding: clamp(2.5em, 8vw, 8em);
+	--gap-padding: clamp(1.5em, 4vw, 2.5em);
+	--color-white: #ffffff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+li,
+ul,
+ol,
+span,
+strong,
+em {
+	font-family: "Ethan tran", sans-serif;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	font-style: normal;
+	font-weight: 450;
+	letter-spacing: normal;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+	vertical-align: middle;
+}
+
+button,
+input [tabindex] {
+	outline: none;
+	border: none;
+}
+
+a {
+	color: var(--color-text);
+	text-decoration: none;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+@media only screen and (min-width: 600px) {
+	/* For tablets: */
+	.col-s-1 {
+		width: 8.33%;
+	}
+
+	.col-s-2 {
+		width: 16.66%;
+	}
+
+	.col-s-3 {
+		width: 25%;
+	}
+
+	.col-s-4 {
+		width: 33.33%;
+	}
+
+	.col-s-5 {
+		width: 41.66%;
+	}
+
+	.col-s-6 {
+		width: 50%;
+	}
+
+	.col-s-7 {
+		width: 58.33%;
+	}
+
+	.col-s-8 {
+		width: 66.66%;
+	}
+
+	.col-s-9 {
+		width: 75%;
+	}
+
+	.col-s-10 {
+		width: 83.33%;
+	}
+
+	.col-s-11 {
+		width: 91.66%;
+	}
+
+	.col-s-12 {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	/* For mobile phones: */
+	[class*="col-"] {
+		width: 100%;
+	}
+}
+
+
+html {
+	font-size: 62, 5%;
+}
+
+body {
+	font-family: "Ethan tran", sans-serif;
+	font-size: 1.28rem;
+	color: var(--color-text-light);
+	line-height: 1.6;
+	font-weight: 450;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+	width: 100%;
+	-webkit-font-smoothing: antialiased;
+	// position: relative;
+	background-color: var(--color-dark);
+}
+
+.container {
+	margin: 0 auto;
+	padding-left: var(--container-padding);
+	padding-right: var(--container-padding);
+	max-width: 100em;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+	-webkit-text-fill-color: rgb(255, 255, 255);
+	transition: background-color 1000s ease-in-out 0s;
+}
+
+// code {
+// 	font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+// 		monospace;
+// }
